@@ -53,6 +53,7 @@
   --text-color: #111517;
   --element-bg: #fff;
   --body-bg: #F2F2F2;
+  --icon-color: #848484;
   --transition-duration: 0.4s;
 }
 
@@ -62,6 +63,7 @@
   --text-color: #fff;
   --element-bg: #2B3844;
   --body-bg: #202C36;
+  --icon-color: var(--text-color);
 }
 
 /* GLOBAL PROPS */
@@ -195,6 +197,17 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 48px;
+}
+.filters-search-wrapper {
+  position: relative;
+}
+.filters-search-icon {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  transform: translateY(-50%);
+  color: var(--icon-color);
+  pointer-events: none;
 }
 
 .filters-search-input {
